@@ -1,0 +1,45 @@
+{
+  "ProjectName": "Bonus Revista 2",
+  "ProjectGuid": "f4162bbd-d709-42af-b81a-0821fcbca858",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.BonusRevista2",
+  "DisplayName": "Bonus Revista 2",
+  "Author": "",
+  "Description": "Bonus Revista 2",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "4.0.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{55b47b61-b656-49b9-b7df-675ebaa7c873}",
+  "WP8ProductID": "{6b0550e0-3831-49c7-978e-c080a50a0821}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.BonusRevista2",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
