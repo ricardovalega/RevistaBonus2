@@ -1,7 +1,208 @@
-<div data-role="view" data-title="Home View" data-layout="main" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow">
-
-    <!-- START_CUSTOM_CODE_home -->
-    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
-    <!-- END_CUSTOM_CODE_home -->
+<div data-role="splitview" id="appearance" data-style="vertical">
+    <div id="main-panel" data-role="pane" data-layout="side-default">
+        <div data-role="view" data-title="Revista" data-zoom="true">
+            <div class="zoom-image"></div>
+        </div>
+        <div data-role="layout" data-id="side-default" data-show="toggleBackButton">
+            <div data-role="header">
+                <div data-role="navbar">
+                    <div class="km-leftitem"><a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" class="km-widget km-button"><span class="km-text"><span class="km-icon km-drawer-button km-notext"></span></span></a></div>
+                    <span data-role="view-title"></span>
+                    <a data-align="right" data-icon="source-code" data-click="goToSourceCode" data-role="button" title="Show this demo source code"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="pane" id="bottom-panel">
+        <div data-role="view" id="side-root" data-stretch="true">
+            <div id="split-scrollview-container">
+                <div data-role="scrollview" data-page="0" data-use-native-scrolling="true" data-pager-overlay="true">
+                    <div class="photo photo1">
+                    </div>
+                    <div class="photo photo2">
+                    </div>
+                    <div class="photo photo3">
+                    </div>
+                    <div class="photo photo4">
+                    </div> 
+                    <div class="photo photo5">
+                    </div>
+                    <div class="photo photo6">
+                    </div>
+                    <div class="photo photo7">
+                    </div>
+                    <div class="photo photo8">
+                    </div>
+                    <div class="photo photo9">
+                    </div>
+                    <div class="photo photo10">
+                    </div>
+                    <div class="photo photo11">
+                    </div>
+                    <div class="photo photo12">
+                    </div>
+                    <div class="photo photo13">
+                    </div>
+                    <div class="photo photo14">
+                    </div>
+                    <div class="photo photo15">
+                    </div>
+                    <div class="photo photo16">
+                    </div>
+                    <div class="photo photo17">
+                    </div>
+                    <div class="photo photo18">
+                    </div>
+                    <div class="photo photo19">
+                    </div>
+                    <div class="photo photo20">
+                    </div>
+                    <div class="photo photo21">
+                    </div>
+                    <div class="photo photo22">
+                    </div>
+                    <div class="photo photo23">
+                    </div>
+                    <div class="photo photo24">
+                    </div>
+                    <div class="photo photo25">
+                    </div>
+                    <div class="photo photo26">
+                    </div>
+                    <div class="photo photo27">
+                    </div>
+                    <div class="photo photo28">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<script type="text/javascript">
+    $(document).on("click", ".photo", function () {
+        $("#main-panel").find(".zoom-image").css("background-image", $(this).css("background-image").replace("220/", ""));
+    });
+</script>
+<style>
+    #bottom-panel {
+        height: 99px;
+        min-height: 99px;
+    }
+    .zoom-image {
+        width: 794px;
+        height: 808px;
+    }
+    #split-scrollview-container .photo {
+        margin: 0;
+        width: 99px;
+        height: 99px;
+        display: inline-block;
+        -webkit-background-size: auto 100%;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .photo1 {
+        background-image: url("components/pageturn/pagina/1.jpg");
+    }
+    .photo2 {
+        background-image: url("components/pageturn/pagina/2.jpg");
+    }
+    .photo3 {
+        background-image: url("components/pageturn/pagina/3.jpg");
+    }
+    .photo4 {
+        background-image: url("components/pageturn/pagina/4.jpg");
+    }
+    .photo5 {
+        background-image: url("components/pageturn/pagina/5.jpg");
+    }
+    .photo6 {
+        background-image: url("components/pageturn/pagina/6.jpg");
+    }
+    .photo7 {
+        background-image: url("components/pageturn/pagina/7.jpg");
+    }
+    .photo8 {
+        background-image: url("components/pageturn/pagina/8.jpg");
+    }
+    .photo9 {
+        background-image: url("components/pageturn/pagina/9.jpg");
+    }
+    .photo10 {
+        background-image: url("components/pageturn/pagina/10.jpg");
+    }
+    .photo11 {
+        background-image: url("components/pageturn/pagina/11.jpg");
+    }
+    .photo12 {
+        background-image: url("components/pageturn/pagina/12.jpg");
+    }
+    .photo13 {
+        background-image: url("components/pageturn/pagina/13.jpg");
+    }
+    .photo14 {
+        background-image: url("components/pageturn/pagina/14.jpg");
+    }
+    .photo15 {
+        background-image: url("components/pageturn/pagina/15.jpg");
+    }
+    .photo16 {
+        background-image: url("components/pageturn/pagina/16.jpg");
+    }
+    .photo17 {
+        background-image: url("components/pageturn/pagina/17.jpg");
+    }
+    .photo18 {
+        background-image: url("components/pageturn/pagina/18.jpg");
+    }
+    .photo19 {
+        background-image: url("components/pageturn/pagina/19.jpg");
+    }
+    .photo20 {
+        background-image: url("components/pageturn/pagina/20.jpg");
+    }
+    .photo21 {
+        background-image: url("components/pageturn/pagina/21.jpg");
+    }
+    .photo22 {
+        background-image: url("components/pageturn/pagina/22.jpg");
+    }
+    .photo23 {
+        background-image: url("components/pageturn/pagina/23.jpg");
+    }
+    .photo24 {
+        background-image: url("components/pageturn/pagina/24.jpg");
+    }
+    .photo25 {
+        background-image: url("components/pageturn/pagina/25.jpg");
+    }
+    .photo26 {
+        background-image: url("components/pageturn/pagina/26.jpg");
+    }
+    .photo27 {
+        background-image: url("components/pageturn/pagina/27.jpg");
+    }
+    .photo28 {
+        background-image: url("components/pageturn/pagina/28.jpg");
+    }
+    #main-panel {
+        -webkit-box-flex: 1000;
+        -moz-box-flex: 1000;
+        -moz-flex: 1000;
+        -webkit-flex: 1000;
+        -ms-flex: 1000;
+        flex: 1000;
+    }
+    #main-panel .zoom-image {
+        background-image: url("components/pageturn/pagina/1.jpg");
+        background-position: 50% 50%;
+        -webkit-background-size: 100% auto;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+    #split-scrollview-container {
+        -webkit-transform: translatez(0);
+        width: 100% height: 100%;
+    }
+</style>

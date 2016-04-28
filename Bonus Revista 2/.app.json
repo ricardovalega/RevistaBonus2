@@ -5,19 +5,194 @@
       "type": "kendo-ui-mobile:view",
       "name": "home",
       "components": [],
-      "title": "Home View",
+      "title": "Inicio",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "buscar",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "busdocumento",
+              "title": "Documento",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "busnumero",
+              "title": "Número",
+              "inputType": "text"
+            }
+          ],
+          "name": "buscarModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "title": "Buscar",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "registro",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "nombres",
+              "title": "Nombres",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "apellidos",
+              "title": "Apellidos",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "nacimiento",
+              "title": "Fecha de nacimiento",
+              "inputType": "date"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "telefono",
+              "title": "Teléfono",
+              "inputType": "tel",
+              "placeholder": "+123 444 555 666"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "celular",
+              "title": "Celular",
+              "inputType": "tel",
+              "placeholder": "+123 444 555 666"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "correo",
+              "title": "Correo",
+              "inputType": "email",
+              "placeholder": "example@example.com"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "documento",
+              "title": "Documento",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "numero",
+              "title": "Número",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "genero",
+              "title": "Género",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "direccion",
+              "title": "Dirección",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "departamento",
+              "title": "Departamento",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "provincia",
+              "title": "Provincia",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "distrito",
+              "title": "Distrito",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "referencia",
+              "title": "Referencia",
+              "inputType": "text"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "tarjeta",
+              "title": "Tarjeta nueva",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "recibo",
+              "title": "Recibo de compra",
+              "inputType": "number"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "condiciones",
+              "title": "Términos y condiciones",
+              "inputType": "checkbox"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "firma",
+              "title": "Firma",
+              "inputType": "text"
+            }
+          ],
+          "name": "registroModel",
+          "submitButton": "Guardar",
+          "cancelButton": "Cancelar"
+        }
+      ],
+      "title": "Registro",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "puntos",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "pundocumento",
+              "title": "Documento",
+              "inputType": "dropdownlist"
+            }
+          ],
+          "name": "puntosModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "title": "Puntos",
+      "addToNavigation": true,
+      "icon": "bookmarks"
     }
   ],
   "dataProviders": [],
   "name": "kendoUiMobileApp",
-  "navigation": "tabstrip",
+  "navigation": "drawer",
   "view": "home",
-  "transition": "slide",
-  "showMoreTab": false,
-  "skin": "nova",
-  "skinMainColor": "#32364c",
-  "skinTextColor": "#ffffff",
-  "skinAccentColor": "#ff4350"
+  "skin": "flat"
 }
